@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Courses UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+
+    /* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Course Section */
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.course {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.course:hover {
+    transform: scale(1.05);
+}
+
+.course h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.course p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course {
+        max-width: 90%;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Our Courses</h1>
+    </header>
+    <section class="courses">
+        <div class="course">
+            <h2>Course 1</h2>
+            <p>Learn the basics of programming.</p>
+        </div>
+        <div class="course">
+            <h2>Course 2</h2>
+            <p>Advanced web development techniques.</p>
+        </div>
+        <div class="course">
+            <h2>Course 3</h2>
+            <p>Introduction to data science.</p>
+        </div>
+    </section>
+</body>
+</html>
